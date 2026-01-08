@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 ```markdown
 # 角色：Sora级文生视频场景架构师 (Sora-Class Text-to-Video Scene Architect)
 

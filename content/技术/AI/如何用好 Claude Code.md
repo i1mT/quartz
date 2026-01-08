@@ -1,19 +1,24 @@
 ---
-draft: "true"
+draft: true
 ---
 # 购买
-
 ## Claude code 官网
 直接操作购买即可
 ## OpenRouter【推荐】
 AI 网关，提供所有模型。你充的钱，可以花在它支持的任何模型上，不用担心模型强度变化了，在原平台的钱白充了。
 
 所有AI 网关类，都可以使用 Claude code router 来集成到 claude code 中。
-使用方式如下：
+使用方式如下，详见[这里](https://openrouter.ai/docs/guides/guides/claude-code-integration)：
+```bash
+# Set these in your shell (e.g., ~/.bashrc, ~/.zshrc)
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
+export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
+export ANTHROPIC_API_KEY="" # Important: Must be explicitly empty
+```
 
+但更推荐使用 claude-code-router 来管理AI供应商，下面是详细使用方式。
 ### 环境准备
-
-安装 npm
+- 安装 npm
 ### 安装
 > 参考：[claude code router](https://github.com/musistudio/claude-code-router)
 
@@ -26,9 +31,7 @@ npm install -g @musistudio/claude-code-router
 ```
 npm install -g @anthropic-ai/claude-code
 ```
-
 ### 配置API
-
 1. 执行 `ccr ui`
 2. 在网页中添加 Provider
 	![[Pasted image 20260105171348.png]]
@@ -77,17 +80,12 @@ npm install -g @anthropic-ai/claude-code
 # 技巧
 
 ## slash command
-
-
-
+> WIP
 ## agent
-
-
+> WIP
 
 # 方法论
-
 ## GEB 管理法
-
 在 Vibe coding 的过程中，核心问题是：
 
 ***如何在代码膨胀的过程中始终保证项目清晰可读***
@@ -121,13 +119,9 @@ npm install -g @anthropic-ai/claude-code
 2. 给每个文件的开头添加对应的注释
 ```
 
-
-
-
 # 其他
 
 ## 移动端管理
-
 可以使用 happy 在手机、平板上查看任务进度。开启新任务等。
 
 
